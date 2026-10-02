@@ -4,7 +4,7 @@
 **Repository:** https://github.com/qsay8/OpenWebBench  
 **Licence:** MIT  
 **Primary technology:** HTML, CSS, JavaScript, Playwright  
-**Maintainer:** Mj Bailey
+**Maintainer:** Me (john)
 
 ## Project summary
 
