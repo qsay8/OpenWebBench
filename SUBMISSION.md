@@ -1,7 +1,7 @@
 # BrowserStack Open Source Program — application draft
 
 **Project:** OpenWebBench  
-**Repository:** [[Add your public GitHub repository URL after publishing]](https://github.com/qsay8/OpenWebBench)  
+**Repository:** https://github.com/qsay8/OpenWebBench  
 **Licence:** MIT  
 **Primary technology:** HTML, CSS, JavaScript, Playwright  
 **Maintainer:** Mj Bailey
