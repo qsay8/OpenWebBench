@@ -1,0 +1,14 @@
+{
+  "name": "openwebbench",
+  "version": "0.1.0",
+  "private": false,
+  "description": "An open-source browser compatibility test lab",
+  "scripts": {
+    "serve": "http-server . -p 4173 -c-1",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "http-server": "^14.1.1"
+  }
+}

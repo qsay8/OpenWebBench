@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A tiny open-source browser compatibility test lab.">
+  <title>OpenWebBench — Browser Compatibility Lab</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="OpenWebBench home">OpenWebBench<span> / compatibility lab</span></a>
+    <a class="skip-link" href="#main">Skip to content</a>
+  </header>
+  <main id="main" class="layout">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">OPEN SOURCE · BROWSER TESTING</p>
+      <h1 id="page-title">Does your browser behave as expected?</h1>
+      <p>Exercise a few everyday interface patterns and use the automated tests to spot regressions across browsers and screen sizes.</p>
+      <div class="chips" aria-label="Test areas"><span>Responsive layout</span><span>Forms</span><span>Keyboard</span><span>UI state</span></div>
+    </section>
+    <section class="panel" aria-labelledby="form-title">
+      <div class="panel-heading">
+        <div><p class="eyebrow">INTERACTION CHECK</p><h2 id="form-title">Contact form demo</h2></div>
+        <span class="status-dot">Ready</span>
+      </div>
+      <form id="demo-form" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" autocomplete="name" required minlength="2" aria-describedby="name-help name-error">
+          <small id="name-help">Enter at least two characters.</small>
+          <small class="error" id="name-error"></small>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+          <small class="error" id="email-error"></small>
+        </div>
+        <div class="field">
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic">
+            <option value="compatibility">Browser compatibility</option>
+            <option value="accessibility">Accessibility</option>
+            <option value="layout">Responsive layout</option>
+          </select>
+        </div>
+        <label class="check"><input id="updates" type="checkbox"> Include me in demo updates</label>
+        <button type="submit">Validate form</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+    <section class="panel state-panel" aria-labelledby="state-title">
+      <div><p class="eyebrow">STATE CHECK</p><h2 id="state-title">Interactive counter</h2></div>
+      <p class="counter" aria-live="polite">Count: <output id="count">0</output></p>
+      <div class="actions">
+        <button id="decrement" class="secondary" type="button" aria-label="Decrease count">−</button>
+        <button id="increment" type="button" aria-label="Increase count">+</button>
+        <button id="reset" class="text-button" type="button">Reset</button>
+      </div>
+      <p class="hint">Use Tab and Enter/Space to operate the controls.</p>
+    </section>
+  </main>
+  <footer><p>OpenWebBench · MIT licensed · Built for reproducible browser testing</p></footer>
+</body>
+</html>
